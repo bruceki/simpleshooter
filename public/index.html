@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <title>Shooting range</title>
+
+    <link rel="stylesheet" type="text/css" title="UI styles" href="styles.css" media="screen, print">
+
+    <script src="/js/gamecode.js" type="text/javascript"></script>
+    <script src="/js/roomdata.js" type="text/javascript"></script>
+	
+	
+  </head>
+
+
+  <body>
+  <div><div class="optionsBar">Renegade shooter
+  
+  <div class="helpbutton" onclick="popup('help.html')">Help</div>
+  
+  </div>
+  
+
+<div class="targetingtitle"> Targeting Info</div>
+	<div ID="targetbox">
+	<div ID="portrait"></div>
+	<div ID="health"></div>
+	</div>
+	
+	<div class="secondaryFireTitle"> Secondary Fire</div>
+	<div ID ="secondaryFire">
+	<div ID ="secondaryAmmo"><img src="images/interface/noSecondary.png"></div>
+	</div>
+	
+	<div ID="questWindow" class="questwindow">
+	
+	<div ID="targetInteraction" onclick='onTargetClick()'><img class="target" src="images/targets/ming.gif"></div>
+	</div>	
+
+
+		
+	<div ID="shotcontrol">
+	<div class="firecontroltitle">Attack options</div>
+	
+	<div class="attack">
+	<div onclick='onReloadClick()' class='custombutton'><img src="images/interface/reload.png"></div>
+	<div onclick='onAimedShotClick()' class='custombutton'><img src="images/interface/aimed.png"></div>
+    <div onclick='onSprayAndPrayClick()' class='custombutton'><img src="images/interface/multibullets.png"></div>
+	<div onclick='onMeleeClick()' class='custombutton'><img src="images/interface/melee.png"></div>
+	</div>
+	
+	<div class="attachments">
+	<div ID="magAttachment" onclick="onMagAttachClick()" class='custombutton'><img src="images/interface/magAttachedno.png"></div>
+	<div ID="silencerAttachment" onclick="onSilencerAttachClick()" class='custombutton'><img src="images/interface/silencerAttachedno.png"></div>
+	<div ID="scopeAttachment" onclick="onScopeAttachClick()" class='custombutton'><img src="images/interface/scopeAttachedno.png"></div>
+	<div ID="grenadeLauncherAttachment" onclick = "onGrenadeAttachClick()" class='custombutton'><img src="images/interface/grenadeLauncherAttachedno.png"></div>
+	<div ID="bayonetAttachment" onclick="onBayonetAttachClick()" class='custombutton'><img src="images/interface/bayonetAttachedno.png"></div>
+	</div>
+	</div>
+	
+  </div>
+  
+	
+	
+	<div class="roomTitle"><< You shake off the cold and enter the shooting range! >></div>
+    <div id="screenage" class="output">
+<p> > Let's rock, sucka!</p>
+</div>
+
+	
+	<div class="containment">
+	<input type="text" class="inputtext" value="I await your command master" />
+	<div ID="inputtextbutton"> submit </div>
+	</div>
+
+  </body>
+
+</html>

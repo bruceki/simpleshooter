@@ -1,0 +1,292 @@
+body{
+
+	background: #00000F url('./images/interface/stripe.png') repeat;
+	color: #FFFFFF;
+}
+
+/*
+////////////////
+text styling
+///////////////
+*/
+
+.alert{
+	color:red;
+}
+
+.update{
+	color: #FFFFFF;
+}
+
+
+
+
+/*
+////////////////
+base interface styling
+///////////////
+*/
+
+/* this is the bar at the top of the window, it holds the 'help' option as well as general settings */
+.optionsBar{
+
+	height:30px;
+	background: #292421;
+	width: 100%;
+	padding-top: 2px;
+	padding-left: 2px;
+	font-weight: bold;
+}
+
+/* This is a title that displays for each room you go into. */
+.roomTitle{
+
+	height:20px;
+	background: #292421;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: .8em;
+	width: 100%;
+	color: #CCFFFF;
+}
+
+/* styles the 'Attack Options' title */
+.firecontroltitle{
+
+font-size: .7em;
+padding-bottom: 1px;
+text-align:center;
+background:#000000;
+font-weight: bold;
+}
+
+#shotcontrol{
+
+width: 100%;
+z-index: 55;
+position:fixed;
+top: 280px;
+background: rgba(0, 0, 0, 0.4);
+}
+
+.attack{
+
+	padding-left: 8px;
+	padding-right: 4px;
+
+}
+
+.attachments{
+
+	padding-left: 2px;
+	margin-left: 10px;
+}
+
+/*
+////////////////
+target, and targeting-specific styles
+///////////////
+*/
+
+#targetInteraction{
+
+
+}
+
+.targetingtitle{
+	z-index: 67;
+	position:absolute;
+	background: #000000;
+	width:100px;
+	font-size: .6em;
+	font-weight: bold;
+}
+
+.secondaryFireTitle{
+	z-index: 69;
+	top:120px;
+	position:absolute;
+	background: #000000;
+	width:100px;
+	font-size: .6em;
+	font-weight: bold;
+
+}
+
+#targetbox{
+
+	z-index: 66;
+	position:absolute;
+	width: 100px;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#secondaryFire{
+	position:absolute;
+	z-index: 66;
+	top:140px;
+	width: 100px;
+	height: 30px;
+	font-size: .6em;
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#fireSecondary{
+	position:relative;
+	z-index: 67;
+	cursor: pointer;
+
+}
+
+.secondaryfired{
+
+	position:relative;
+	z-index: 77;
+
+}
+
+.secondaryreload{
+	position:relative;
+	z-index: 68;
+	cursor:pointer;
+	margin-left: 3px;
+
+}
+
+
+.target{
+
+	margin-right: 2px;
+	cursor: pointer;
+	
+}
+
+.target:hover{
+
+
+}
+
+
+/* Target health info that is displayed in the targeting overlay*/
+
+#portrait{
+	padding-top: 20px;
+	z-index: 3;
+	position: absolute;
+}
+
+
+#health{
+
+	padding-top: 25px;
+	z-index: 3;
+	position: absolute;
+	font-size: .3em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/*
+////////////////
+quest window and text box specific styling
+///////////////
+*/
+
+
+/* Styling for the window where targets appear */
+.questwindow{
+	background: #00000F url('./images/backdrops/1.png') no-repeat center;
+	width: 100%;
+	height: 290px;
+	margin-bottom:0px;
+	text-align:center;
+}
+
+
+/* Contains the text box, input text bar, and submit button */
+.containment{
+
+	width: 430px;
+}
+
+/* The input text bar (where you type commands) */
+.inputtext{
+
+	width:100%;
+	background: #000000;
+	height:2em;
+	color: #8ADA55;
+	font-size: 1em;
+	border: #FFFAFA solid 1px;
+	padding-left: 6px;
+}
+
+/* Style control for the physical text box that displays information */
+.output{
+	color: #8ADA55;
+	background-color: #000000;
+	border: #FFFAFA solid 1px;
+	padding: 10px;
+	height: 275px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/*
+////////////////
+all button specific styling
+///////////////
+*/
+
+#inputtextbutton{
+
+	width:100%;
+	background: #292421;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	height: 1em;
+	border: #FFFAFA solid 1px;
+	padding: 3px;
+	cursor: pointer;
+	transition: background-color, color 2s;
+	-moz-transition: background-color 2s; /* Firefox 4 */
+	-webkit-transition: background-color 2s; /* Safari and Chrome */
+	-o-transition: background-color 2s; /* Opera */
+}
+
+#inputtextbutton:hover{
+	background-color: #838B83;
+}
+
+.custombutton{
+
+	color:  #CFDBC5;
+	margin-right:9px;
+	padding-top:3px;
+	cursor: pointer;
+	transition: color .5s;
+	-moz-transition: color .5s; /* Firefox 4 */
+	-webkit-transition: color .5s; /* Safari and Chrome */
+	-o-transition: color .5s; /* Opera */
+	font-weight: bold;
+	font-size: .9em;
+	float: left;
+	vertical-align: middle;
+}
+
+.custombutton:hover{
+	color: #FFFFFF;
+}
+
+.helpbutton{
+
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+	font-size: .7em;
+}
